@@ -3,7 +3,7 @@ var addtaskbutton = document.getElementById("addbtn");
 // add the unordered list element //
 var list = document.getElementById("task");
 
-// add condition to the function if nothing in the task dont execute //
+
 addtaskbutton.addEventListener("click", function () {
   var inputText = document.getElementById("inputtask").value;
   if (inputText !== "") {
@@ -17,7 +17,7 @@ addtaskbutton.addEventListener("click", function () {
     listitem.appendChild(listparagraph);
     // connect input text with paragraph /
     listparagraph.innerHTML = inputText;
-    // add buttons to the list items //
+
     // done button //
     const donebutton = document.createElement("button");
     donebutton.innerHTML = `<i class="fa fa-check"></i>`;
@@ -42,5 +42,5 @@ addtaskbutton.addEventListener("click", function () {
     });
   } else {
     alert("Please name a task.");
-  } // else statemenet make a popup saying please enter a task //
+  }
 });
