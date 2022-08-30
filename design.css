@@ -1,0 +1,94 @@
+* {
+  margin: 0;padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: none;list-style: none;
+}
+body {
+  background-color: rgb(31, 53, 73);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+.form {
+  background-color: white;
+  width: 350px;
+  height: 50px;
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+  width: 100%;
+}
+#inputtask {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 75%;
+  height: 25px;
+  padding-left: 10px;
+}
+#addbtn {
+  border: 1px solid green;
+  color: green;
+  width: 15%;
+  height: 25px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+#addbtn:hover {
+  background-color: green;
+  color: white;
+  transition: 0.3s;
+}
+#task {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+#task li{
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-rows: 50px;
+  background-color: white;
+  align-items: center;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+#task li p {
+  padding-left: 15px;
+  transition: 0.3s;
+}
+#donebtn {
+  border: 1px solid orange;
+  height: 95%;
+  width: 95%;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+#donebtn:hover {
+  background-color: orange;
+  color: white;
+  transition: 0.3s;
+}
+#deletebtn {
+  border: 1px solid red;
+  height: 95%;
+  width: 95%;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+#deletebtn:hover {
+  background-color: red;
+  color: white;
+  transition: 0.3s;
+}
